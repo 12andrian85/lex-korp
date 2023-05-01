@@ -1,0 +1,100 @@
+.service {
+
+    padding: 50px 10px;
+    background-color: $color-grey-light;
+
+    &__header {
+        text-align: center;
+    }
+
+    &__title span {
+        color: $color-primary;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    &__title h2 {
+        font-size: 30px;
+    }
+
+    &__content {
+        text-align: center;
+        color: $color-grey-dark;
+        padding: 0 5px;
+    }
+    
+    &__list {
+        @include no-list-style;
+        text-align: center;
+    }
+    
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 350px;
+
+        padding: 30px 40px;
+        margin: 20px 0;
+        background-color: $color-white;
+        border-radius: 15px;
+        border-bottom: 5px solid $color-primary;
+        box-shadow: 0px 0px 16px 3px $color-grey;
+    }
+    
+    &__item:hover{
+        border-bottom: 5px solid $color-green;
+    }
+
+    &__item img{
+        width: 80px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: $color-grey-light;
+    }
+    &__item--green{
+        color: $color-white;
+        background-color: $color-primary;
+        border-bottom: 5px solid $color-secondary;
+    }
+    &__item--green img{
+        background-color: $color-green;
+    }
+
+}
+
+@media (min-width: $width-tablet ) {
+    .service {
+        @include container;
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        &__items {
+            width: calc(100%/2);
+            padding: 0 20px;
+            
+        }
+    }
+}
+
+@media (min-width: $width-desktop ) {
+    .service {
+        &__header {
+            display: flex;
+        }
+        
+        &__title,
+        &__content {
+            width: calc(100%/2);
+            text-align: start;
+        }
+        
+        &__items {
+            width: calc(100% / 3);
+            padding: 0 3    0px;
+        }
+    }
+}

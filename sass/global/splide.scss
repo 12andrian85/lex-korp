@@ -1,0 +1,17 @@
+.splide {
+    // background-color: red;
+
+    &__list {
+        @include no-list-style;
+        // list-style: none;
+        // display: flex;
+        // margin: 0 200px;
+    }
+
+    // &__slide {
+    // }
+
+
+}
+
+

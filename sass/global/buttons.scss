@@ -1,0 +1,32 @@
+button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 15px;
+    
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: 600;
+    // color: $color-white;
+    
+    // background-color: $color-green;
+    // border: 0;
+    outline: 0;
+
+    // manage all states
+    &:hover {
+        // background-color: $color-green-dark;
+    }
+    
+    &:focus {}
+
+    &:active {
+        // color: $color-green;
+    }
+    
+    &:disabled {}
+}
+
+// .btn-small {}
+// .btn-medium {}
+// .btn-large {}

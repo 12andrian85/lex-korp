@@ -1,0 +1,175 @@
+// extenders
+.field-hover {
+    border-color: $color-grey-dark;
+}
+
+.field-focus {
+    outline: 0;
+    // box-shadow: 0 0 0 3px rgba($color-primary, .5);
+    // border-color: $color-primary;
+}
+
+.field-disabled {
+    background-color: $color-grey;
+    color: $color-grey;
+    cursor: not-allowed;
+    border-color: $color-grey;
+}
+
+// style global inputs, select, textarea, etc, except radio and checkbox
+input {
+    font-family: $font-family;
+    font-size: 1rem;
+    // font-weight: bold;
+    line-height: 1.1;
+    background-color: $color-white;
+}
+
+select,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px 10px;
+    color: $color-text-base;
+    border: 2px solid $color-grey;
+    border-radius: 10px;
+
+    // Manage hover state
+    // &:hover {
+    //     @extend .field-hover;
+    // }
+
+    // Manage focus state
+    &:focus {
+        @extend .field-focus;
+    }
+
+    // Manage disabled state
+    .disabled,
+    &:disabled {
+        @extend .field-disabled;
+    }
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px;
+    resize: vertical;
+    border: 2px solid grey;
+    border-radius: 15px;
+}
+
+// style custom radio and checkbox
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-flex;
+    justify-content: center;
+    width: 2.2em;
+    height: 2.2em;
+    margin: 0;
+    margin-right: 25px;
+    
+    font: inherit;
+    color: $color-text-base;
+    align-items: center;
+    
+    border: 2px solid $color-grey;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    &::before {
+        content: "";
+        width: 1.2em;
+        height: 1.2em;
+        background-color: $color-primary;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+    }
+
+    &:checked::before {
+        transform: scale(1);
+    }
+}
+
+// Radio
+input[type="radio"] {
+    border-radius: 50%;
+
+    &::before {
+        border-radius: 50%;
+    }
+}
+
+// Manage hover state
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+    @extend .field-hover;
+}
+
+input[type="radio"]:hover::before,
+input[type="checkbox"]:hover::before {
+    background-color: $color-primary;
+}
+
+// Manage focus state
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+    @extend .field-focus;
+}
+
+// Manage disabled state
+.disabled,
+input[type="radio"]:disabled,
+input[type="checkbox"]:disabled {
+    @extend .field-disabled;
+    background-color: $color-white;
+}
+
+input[type="radio"]:disabled::before,
+input[type="checkbox"]:disabled::before {
+    background-color: $color-grey;
+}
+
+.field.disabled label,
+input[type="radio"]:disabled~label,
+input[type="checkbox"]:disabled~label {
+    color: $color-grey;
+    cursor: not-allowed;
+}
+
+fieldset {
+    margin: 0;
+    padding: 40px 30px;
+    border: none;
+}
+
+legend {
+    padding: 30px 20px;
+
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+
+    color: $color-primary;
+    border: none;
+}
+
+// classes to code layout for forms
+form {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .field {
+        padding: 20px 0;
+        width: 100%;
+    }
+}

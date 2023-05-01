@@ -1,0 +1,112 @@
+.improving {
+
+    &__container {
+        position: relative;
+        height: 320px;
+        margin: 20px 0px;
+        background-image: url("/img/businesswoman-writing-working-business-financial-data-laptop-computer-table-office-min.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__container::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;       
+        background-color: $color-secondary;
+    }
+
+    &__head {
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: white;
+        position: absolute;
+        z-index: 1;
+        opacity: 1;
+    }
+
+    &__head p {
+        font-weight: 600;
+    }
+
+    &__btn {
+        background-color: $color-primary;
+        color: $color-white;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        width: 120px;
+    }
+
+    &__btn:hover {
+        background-color: $color-secondary;
+    }
+
+    &__list {
+        @include no-list-style;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    &__item {
+        position: relative;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100%/ 2);
+        flex-grow: 1;
+    }
+
+    &__item img{
+        width: 50px;
+        margin: 20px;
+    }
+
+    &__numbers{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    &__text{
+        color: $color-grey;
+    }
+}
+
+@media (min-width: $width-tablet ) {
+    .improving {
+
+        &__head {
+            padding-top: 50px;
+        }
+
+        &__list {
+            flex-wrap: nowrap;
+        }
+
+        &__item {
+            width: calc(100%/ 4);
+        }
+        &__body{
+            @include container;
+        }
+
+    }
+
+}
+
+@media (min-width: $width-desktop) {
+    .improving {
+
+        &__head {
+            padding: 50px 200px;
+        }
+    }
+}

@@ -1,0 +1,130 @@
+.features {
+    position: relative;
+    top: -80px;
+
+    &__item {
+        position: relative;
+        margin: 20px 5px;
+        padding: 150px 40px 50px 40px;
+        border-radius: 10px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        justify-content: flex-end;
+        align-items: center;
+        box-shadow: 0px 3px 14px 0px $color-secondary;
+    }
+
+    &__item h4 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    &__item p {
+        color: $color-grey;
+    }
+
+    &__item a {
+        position: relative;
+        text-decoration: none;
+        color: $color-primary;
+        font-weight: 800;
+        width: max-content;
+
+    }
+
+    &__item a:hover {
+        border-bottom: 1px solid $color-primary;
+    }
+
+    &__item a::after {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-image: url("/img/arrow-right-solid.svg");
+
+        top: 5px;
+        transform: translateX(-50%);
+        right: -30px;
+    }
+
+
+
+    &__item--files a:hover {
+        border-bottom: 1px solid $color-white;
+    }
+
+    &__item--files {
+        background-color: $color-primary;
+        color: white;
+    }
+
+
+    &__item--files p {
+        color: white;
+    }
+
+    &__item--files a {
+        color: white;
+    }
+
+    &__item::after {
+        position: absolute;
+        content: "";
+
+        width: 80px;
+        height: 80px;
+        left: 50%;
+        top: 70px;
+        border-radius: 10px;
+        transform: translate(-50%, -50%);
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 60px;
+        background-color: $color-grey-light;
+    }
+
+    &__item--files::after {
+        background-color: rgb(3, 169, 3);
+    }
+
+    &__item--banknote::after {
+        background-image: url("/img/money-bill-1-regular.svg");
+    }
+
+    &__item--files::after {
+        background-image: url("/img/file-lines-regular - 1.svg");
+    }
+
+    &__item--accounting::after {
+        background-image: url("/img/address-book-regular.svg");
+    }
+
+}
+
+@media (min-width: $width-tablet ) {
+    .features {
+        display: flex;
+
+        &__item {
+            flex-grow: 1;
+        }
+
+        &__item a::after {}
+    }
+}
+
+@media (min-width: $width-desktop ) {
+    .features {
+        padding: 0 150px;
+
+        &__item {
+            margin: 20px 15px;
+            padding: 150px 10px 50px 10px;
+        }
+    }
+}

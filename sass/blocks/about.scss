@@ -1,0 +1,142 @@
+.about {
+    margin-top: 55px;
+    @include container;
+
+    &__title {
+        text-align: center;
+        margin: 10px;
+        padding: 30px 0;
+    }
+
+    &__title span {
+        color: $color-primary;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    &__title h2 {
+        font-size: 30px;
+    }
+
+
+    &__foto {
+        position: relative;
+        margin: 10px;
+        height: 300px;
+        background-image: url("/img/two-about.webp");
+        background-size: cover;
+        color: wheat;
+    }
+
+    &__experience {
+        position: absolute;
+        text-align: start;
+        width: 130px;
+        height: 120px;
+        padding: 20px 15px;
+        border-radius: 10px;
+
+        bottom: -20px;
+        left: 20px;
+        background-color: $color-primary;
+        background-image: url("/img/trophy-solid.svg");
+        background-position: -50px;
+        background-repeat: no-repeat;
+    }
+
+    &__experience--number {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    &__content {
+        padding-top: 5px;
+        margin: 10px;
+        text-align: center;
+        color: grey;
+    }
+
+    &__text {
+        margin: 10px;
+    }
+
+    &__advantage {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        flex-grow: 1;
+        text-align: start;
+    }
+
+    &__ticks {
+        display: block;
+        width: 70px;
+        height: 35px;
+        border-radius: 17px;
+        margin: 10px;
+        background-color: $color-grey-light;
+        background-image: url("/img/check-double-solid.svg");
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: center;
+    }
+
+}
+
+@media (min-width: $width-tablet ) {
+    .about {
+        &__advantage {
+            flex-direction: column;
+        }
+
+        &__ticks {
+            width: 35px;
+        }
+
+        &__list {
+            display: flex;
+        }
+        &__text{
+            margin-bottom: 30px;
+        }
+
+        &__foto {
+            position: relative;
+        }
+        &__experience {
+            bottom: 20px;
+        }
+    }
+}
+
+@media (min-width: $width-desktop ) {
+    .about {
+        @include container;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &__list {
+            display: block;
+        }
+
+        &__foto {
+            position: absolute;
+            left: 150px;
+            width: 35%;
+            height: 620px;
+            background-position: top;
+        }
+        &__advantage{
+            flex-direction: row;
+        }
+
+        &__title {
+            width: 50%;
+        }
+
+        &__content {
+            width: 50%;
+        }
+    }
+}

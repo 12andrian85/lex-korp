@@ -1,0 +1,59 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+figure,
+figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+i,
+video {
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+    flex-shrink: 0; // IE11
+}
+
+//Remove white space after img
+img{
+    display: block;
+}
+
+ul, li,div, span, article, section, nav, form{
+    @include outline;
+}
+
+// Working around svg icons
+// SVG Symbol / Use method
+// .social {
+//     width: 50px;
+//     height: 50px;
+//     fill: rgb(214, 148, 148);
+
+
+//     &:hover {
+//         fill: green;
+//     }
+
+//     &:active {
+//         fill: blue;
+//         // opacity: .7;
+//     }
+// }
+
+
+// inline svg method
+// #sprite-facebook-1 {
+//     width: 70px;
+//     height: 70px;
+//     fill: red;
+
+//     &:hover {
+//         fill: green;
+//     }
+// }

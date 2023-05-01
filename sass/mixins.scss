@@ -1,0 +1,35 @@
+@mixin no-list-style {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin outline {
+    // min-height: 50px;
+    outline-color: tomato;
+    outline-style: dashed;
+    outline-width: 1px;
+}
+
+@mixin container-form{
+    padding: 0 20px;
+
+    @media (min-width: $width-tablet ) {
+       padding: 0 40px;
+    }
+
+    @media (min-width: $width-desktop ) {
+        padding: 0 80px;
+    }
+}
+
+@mixin container {
+
+    @media (min-width: $width-tablet ) {
+        // padding: 0 30px;
+    }
+
+    @media (min-width: $width-desktop ) {
+        padding: 0 150px;
+    }
+}

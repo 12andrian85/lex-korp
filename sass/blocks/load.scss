@@ -1,0 +1,178 @@
+.load {
+    .load-form {
+        background-color: #F2F2F2FF;
+
+        &__foto img {
+            width: 100%;
+        }
+
+        &__tools {
+            height: 120px;
+            position: relative;
+            display: flex;
+            margin: 30px;
+        }
+
+        &__items {
+            width: 100%;
+            justify-content: center;
+            display: flex;
+            padding: 15px 0;
+        }
+
+        &__label {
+            position: relative;
+        }
+
+        &__label {
+            position: absolute;
+            content: "";
+            width: 40px;
+            height: 40px;
+            fill: #908e8e;
+            background-repeat: no-repeat;
+        }
+
+        &__label:hover {
+            fill: rgb(68, 67, 67)
+        }
+
+        &__label:active {
+            fill: rgb(211, 62, 124);
+        }
+
+        &__input--none {
+            display: none;
+        }
+
+        &__input {
+            position: absolute;
+            width: 90%;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 70px;
+        }
+
+        &__button {
+            height: 150px;
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__btn {
+            width: 80%;
+            height: 50px;
+            margin: 15px;
+            border: 2px solid;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 18px;
+            background-color: transparent;
+        }
+
+        &__btn--submit {
+            border-color: rgb(211, 62, 124);
+            color: rgb(211, 62, 124);
+        }
+
+        &__btn--submit:hover {
+            background-color: rgb(211, 62, 124);
+            color: white;
+        }
+
+        &__btn--submit:active {
+            color: rgb(231, 144, 180);
+        }
+
+        &__btn--cancel {
+            border-color: rgb(158, 158, 158);
+            color: rgb(158, 158, 158);
+        }
+
+        &__btn--cancel:hover {
+            border-color: grey;
+            color: grey;
+        }
+
+        &__btn--cancel:active {
+            background-color: grey;
+            color: rgb(158, 158, 158);
+        }
+    }
+}
+
+@media (min-width: $width-tablet ) {
+    .load {
+        .load-form {
+            display: flex;
+
+            &__foto {
+                width: 50%;
+                padding: 45px;
+            }
+
+            &__tools {
+                border-bottom: 1px solid grey;
+            }
+
+            &__items {
+                position: relative;
+                padding: 30px 0;
+            }
+
+            &__inner {
+                width: 50%;
+            }
+
+            &__tools {
+                height: auto;
+                flex-direction: column;
+            }
+
+            &__input {
+                width: 65%;
+                margin-left: 70px;
+                position: initial;
+                transform: none;
+            }
+
+            &__input--none {
+                display: block;
+            }
+
+            &__label {
+                left: 20px;
+                top: 10px;
+            }
+        }
+    }
+}
+
+@media (min-width: $width-desktop ) {
+    .load {
+        padding: 0 130px;
+
+        .load-form {
+            &__foto {
+                width: 40%;
+            }
+
+            &__inner {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            &__button {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

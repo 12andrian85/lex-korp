@@ -1,0 +1,150 @@
+.footer {
+    padding: 10px 20px;
+    background-image: url(/img/2400_c1ouon_img_866df235472197bbe4f267950c51c60e.webp);
+    background-size: cover;
+    margin: 10px 0;
+
+    &__logo {
+        text-align: start;
+        color: $color-white;
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+    }
+
+    &__social {
+        display: inline-flex;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    &__list {
+        @include no-list-style;
+        display: flex;
+    }
+
+    &__item span {
+        margin: 5px 0;
+    }
+
+    &__item a {
+        color: white;
+        text-decoration: none;
+        margin: 5px 0;
+        cursor: pointer;
+    }
+
+    &__item a:hover {
+        border-bottom: 1px solid $color-primary;
+        width: max-content;
+    }
+
+    &__item h3 {
+        color: $color-primary;
+    }
+
+    &__item {
+        text-transform: capitalize;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        color: $color-white;
+    }
+
+
+    &__contacts {
+        display: flex;
+    }
+
+    &__contact {
+        width: calc(100%/1.7);
+    }
+
+    &__contact a {
+        color: $color-white;
+        text-decoration: none;
+    }
+
+    &__contact a:hover {
+        border-bottom: 1px solid $color-primary;
+        width: max-content;
+    }
+
+    &__img {
+        width: 35px;
+        margin: 10px 0;
+    }
+
+    &__email {
+        color: $color-white;
+    }
+
+    &__email a {
+        text-decoration: none;
+        color: $color-white;
+    }
+}
+
+@media (min-width: $width-tablet) {
+    .footer {
+        @include container;
+        display: flex;
+        flex-wrap: wrap;
+
+        &__logo {
+            width: 50%;
+            flex-grow: 1;
+            padding-right: 100px;
+        }
+
+        &__container {
+            flex-grow: 1;
+        }
+
+        &__contacts {
+            padding: 0 150px;
+        }
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .footer {
+        padding-top: 50PX;
+        padding-bottom: 50px;
+
+        &__contacts {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            width: auto;
+        }
+
+        &__container {
+            padding: 0;
+        }
+
+        &__email,
+        &__contact {
+            display: flex;
+            width: 200px;
+        }
+        &__contact div,
+        &__email div {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+
+        &__contacts,
+        &__container,
+        &__logo {
+            width: calc(100%/3);
+        }
+    }
+}

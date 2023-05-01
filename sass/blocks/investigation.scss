@@ -1,0 +1,71 @@
+.investigation {
+    display: none;
+}
+
+@media (min-width: $width-tablet ) {
+    .investigation {
+        display: flex;
+        padding: 0 30px;
+        background-color: #F2F2F2FF;
+
+        &__foto {
+            position: relative;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        &__number {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            font-size: 140px;
+            font-weight: 900;
+            top: -75px;
+            left: 49%;
+            transform: translateX(-50%);
+            color: rgb(238, 53, 53);
+        }
+
+        &__block {
+            text-align: left;
+            width: 50%;
+        }
+
+        &__block h3 {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 36px;
+            margin: 80px 150px 20px 0;
+        }
+
+        &__block p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        &__block a {
+            color: rgb(177, 59, 59);
+        }
+    }
+}
+
+@media (min-width: $width-desktop ) {
+    .investigation {
+        display: flex;
+
+        &__foto {
+            width: 36%;
+        }
+
+        &__block {
+            width: 64%;
+        }
+
+        &__block p {
+            padding-right: 50px;
+        }
+    }
+}

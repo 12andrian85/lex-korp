@@ -1,0 +1,110 @@
+.banner {
+    position: relative;
+
+    &__block {
+        position: absolute;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        height: 500px;
+        padding-top: 70px;
+        background-color: #0f0b4070;
+        color: $color-white;
+    }
+
+    &__block span {
+        color: $color-primary;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    &__block h3 {
+        margin: 0;
+        font-size: 35px;
+    }
+
+    &__block p {
+        font-weight: 600;
+    }
+
+    &__btn button {
+        padding: 10px 30px;
+        color: $color-white;
+        border-radius: 10px;
+        border: none;
+        background-color: $color-primary;
+    }
+
+    &__btn button:hover {
+        background-color: $color-secondary;
+    }
+
+
+    .splide {
+        // &__list {}
+
+        &__slide {
+            height: 500px;
+            background-size: cover;
+            // min-width: 200px;
+            flex-grow: 1;
+        }
+
+        &__list {
+            display: flex;
+        }
+
+        &__slide--analise {
+            background-image: url("/img/business-data-dashboard-analysis-by-ingenious-computer-software-min.jpg");
+        }
+
+        &__slide--inspector {
+            background-image: url("/img/business-man-financial-inspector-secretary-making-report-calculating-checking-balance-internal-reven.jpg");
+        }
+
+        &__slide--buissnes {
+            background-image: url("/img/businesspeople-meeting-plan-analysis-graph-company-finance-strat-min.jpg");
+        }
+
+        &__slide--anding {
+            background-image: url("/img/two-smiling-businessmen-shaking-hands-while-standing-office-min.jpg");
+        }
+
+        &__slide--calculating {
+            background-image: url("/img/side-view-business-man-calculating-finance-numbers-min.jpg");
+        }
+
+        &__slide--low-angle {
+            background-image: url("/img/low-angle-view-skyscrapers-min.jpg");
+        }
+
+    }
+}
+
+@media (min-width: $width-tablet ) {
+    .banner {
+        &__block {
+            text-align: start;
+
+        }
+            &__block span{
+                font-size: 30px;
+            }
+
+            &__block p {
+                width: 40%;
+            }
+
+    }
+}
+
+
+    @media (min-width: $width-desktop ) {
+        .banner{
+            &__block{
+                padding: 100px 150px;
+            }
+        }
+
+    }

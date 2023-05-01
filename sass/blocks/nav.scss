@@ -1,0 +1,109 @@
+.nav {
+    position: relative;
+    height: 60px;
+    display: flex;
+    bottom: -20px;
+    justify-content: space-between;
+    background-color: $color-primary;
+    border-radius: 15px;
+    z-index: 1;
+    
+    &__list {
+        @include no-list-style;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        background-color: $color-primary;
+        border-radius: 10px;
+        display: none;
+    }
+
+    &__item a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto ;
+        padding: 10px;
+        font-size: 22px;
+        text-decoration: none;
+        color: $color-white;
+    }
+    &__item a:hover{
+        color: $color-secondary
+    }
+
+    &__social {
+        @include no-list-style;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 16px;
+        margin: 0 5px;
+    }
+    &__items--f{
+        background-image: url("/img/facebook.svg");
+    }
+    &__items--in{
+        background-image: url("/img/linkedin-in.svg");
+    }
+    &__items--ins{
+        background-image: url("/img/square-instagram.svg");
+    }
+    &__btn{
+        padding: 0 12px;
+        margin: 0 5px;
+        border: none;
+        background-color: transparent;
+        background-image: url("/img/bars-solid.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+}
+@media (min-width: $width-tablet ) {
+    .nav{
+        z-index: 1;
+        top: -10px;
+    }
+}
+
+@media (min-width: $width-desktop ) {
+    .nav {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        &__list {
+            position: initial;
+            @include no-list-style;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+        }
+
+        &__item a {
+            text-decoration: none;
+        }
+
+        &__social {
+            position: absolute;
+            right: 50px;
+        }
+        &__btn{
+            display: none;
+        }
+    }
+
+}
