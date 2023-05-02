@@ -1,11 +1,12 @@
 .features {
     position: relative;
     top: -80px;
+    padding: 0 20px;
 
     &__item {
         position: relative;
-        margin: 20px 5px;
-        padding: 150px 40px 50px 40px;
+        margin: 30px 5px;
+        padding: 150px 40px 30px 40px;
         border-radius: 10px;
         text-align: center;
 
@@ -84,12 +85,12 @@
 
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 60px;
+        background-size: 50px;
         background-color: $color-grey-light;
     }
 
     &__item--files::after {
-        background-color: rgb(3, 169, 3);
+        background-color: #22BA67FF;
     }
 
     &__item--banknote::after {
@@ -114,7 +115,7 @@
             flex-grow: 1;
         }
 
-        &__item a::after {}
+        // &__item a::after {}
     }
 }
 

@@ -1,24 +1,36 @@
 .team {
+    padding: 40px 20px;
+    &__head{
+        text-align: center;
+        padding: 50px 10px;
+    }
+    &__head span {
+        color: #00d56d;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
     &__list {
         @include no-list-style;
     }
-    
+
     &__item {
         position: relative;
         overflow: hidden;
         // flex-grow: 1;
-       
+
     }
 
     &__card {
         text-align: center;
         height: 300px;
         border-radius: 10px;
-        margin: 10px 20px;
+        margin: 20px;
         padding-top: 150px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
+        box-shadow: 0px 0px 16px 3px #7a7b7a;
     }
 
     &__card--first {
@@ -73,6 +85,7 @@
 @media (min-width: $width-tablet ) {
     .team {
         @include container;
+
         &__list {
             display: flex;
         }

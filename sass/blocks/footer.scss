@@ -1,7 +1,8 @@
 .footer {
-    padding: 10px 20px;
+    padding: 40px 20px 0 20px;
+
     background-image: url(/img/2400_c1ouon_img_866df235472197bbe4f267950c51c60e.webp);
-    background-size: cover;
+    background-size: contain;
     margin: 10px 0;
 
     &__logo {
@@ -26,6 +27,7 @@
     &__list {
         @include no-list-style;
         display: flex;
+        padding: 20px 0;
     }
 
     &__item span {
@@ -59,6 +61,7 @@
 
     &__contacts {
         display: flex;
+        margin-bottom: 50px;
     }
 
     &__contact {
@@ -76,7 +79,7 @@
     }
 
     &__img {
-        width: 35px;
+        height: 35px;
         margin: 10px 0;
     }
 
@@ -87,6 +90,23 @@
     &__email a {
         text-decoration: none;
         color: $color-white;
+    }
+    &__developer{
+        background-color: $color-black;
+        color: $color-white;
+        padding: 20px 0 15px 0;
+        margin: 0 -20px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+    }
+    &__link-last{
+        color: $color-white;
+    }
+    &__link{
+        color: $color-primary;
     }
 }
 
@@ -146,5 +166,6 @@
         &__logo {
             width: calc(100%/3);
         }
+       
     }
 }

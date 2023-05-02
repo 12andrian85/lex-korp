@@ -2,10 +2,10 @@
 new Splide("#slideContent", {
     type: 'loop',
     perPage: 1,
-    arrow: false,
-    pagination: true,
+    arrows: false,
+    pagination: false,
     autoplay: true,
-    interval: 1000,
+    interval: 2000,
 }).mount();
 
 // new Splide("#image-carousel", {

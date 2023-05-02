@@ -272,6 +272,7 @@ form .field {
 .nav {
   position: relative;
   height: 60px;
+  padding: 0 20px;
   display: flex;
   bottom: -20px;
   justify-content: space-between;
@@ -454,11 +455,12 @@ form .field {
 .features {
   position: relative;
   top: -80px;
+  padding: 0 20px;
 }
 .features__item {
   position: relative;
-  margin: 20px 5px;
-  padding: 150px 40px 50px 40px;
+  margin: 30px 5px;
+  padding: 150px 40px 30px 40px;
   border-radius: 10px;
   text-align: center;
   display: flex;
@@ -519,11 +521,11 @@ form .field {
   transform: translate(-50%, -50%);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 60px;
+  background-size: 50px;
   background-color: rgb(243, 243, 243);
 }
 .features__item--files::after {
-  background-color: rgb(3, 169, 3);
+  background-color: #22ba67;
 }
 .features__item--banknote::after {
   background-image: url("/img/money-bill-1-regular.svg");
@@ -553,7 +555,8 @@ form .field {
   }
 }
 .about {
-  margin-top: 55px;
+  padding: 0 20px;
+  margin-top: -20px;
 }
 @media (min-width: 1200px) {
   .about {
@@ -563,7 +566,6 @@ form .field {
 .about__title {
   text-align: center;
   margin: 10px;
-  padding: 30px 0;
 }
 .about__title span {
   color: #00d56d;
@@ -571,7 +573,7 @@ form .field {
   font-weight: 600;
 }
 .about__title h2 {
-  font-size: 30px;
+  font-size: 28px;
 }
 .about__foto {
   position: relative;
@@ -584,9 +586,9 @@ form .field {
 .about__experience {
   position: absolute;
   text-align: start;
-  width: 130px;
-  height: 120px;
-  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 35px 25px 25px;
   border-radius: 10px;
   bottom: -20px;
   left: 20px;
@@ -606,12 +608,12 @@ form .field {
   color: grey;
 }
 .about__text {
-  margin: 10px;
+  padding: 10px;
 }
 .about__advantage {
   display: flex;
   align-items: center;
-  margin: 10px;
+  margin: 30px 0;
   flex-grow: 1;
   text-align: start;
 }
@@ -690,7 +692,7 @@ form .field {
   }
 }
 .service {
-  padding: 50px 10px;
+  padding: 50px 20px;
   background-color: rgb(243, 243, 243);
 }
 .service__header {
@@ -719,9 +721,8 @@ form .field {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 350px;
   padding: 30px 40px;
-  margin: 20px 0;
+  margin: 50px 0;
   background-color: #ffffff;
   border-radius: 15px;
   border-bottom: 5px solid #00d56d;
@@ -776,6 +777,18 @@ form .field {
     padding: 0 3 0px;
   }
 }
+.team {
+  padding: 40px 20px;
+}
+.team__head {
+  text-align: center;
+  padding: 50px 10px;
+}
+.team__head span {
+  color: #00d56d;
+  font-size: 20px;
+  font-weight: 600;
+}
 .team__list {
   margin: 0;
   padding: 0;
@@ -789,11 +802,12 @@ form .field {
   text-align: center;
   height: 300px;
   border-radius: 10px;
-  margin: 10px 20px;
+  margin: 20px;
   padding-top: 150px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  box-shadow: 0px 0px 16px 3px #7a7b7a;
 }
 .team__card--first {
   background-image: url("/img/images (1).jpg");
@@ -847,8 +861,8 @@ form .field {
 }
 .improving__container {
   position: relative;
-  height: 320px;
-  margin: 20px 0px;
+  height: 420px;
+  padding: 40px 0;
   background-image: url("/img/businesswoman-writing-working-business-financial-data-laptop-computer-table-office-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -864,7 +878,7 @@ form .field {
   background-color: #1d466f;
 }
 .improving__head {
-  padding: 0 10px;
+  padding: 0 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -872,7 +886,6 @@ form .field {
   color: white;
   position: absolute;
   z-index: 1;
-  opacity: 1;
 }
 .improving__head p {
   font-weight: 600;
@@ -940,8 +953,7 @@ form .field {
 }
 .form {
   background-color: rgb(243, 243, 243);
-  padding: 40px 10px;
-  margin: 10px;
+  padding: 40px 20px;
 }
 .form__title {
   text-align: center;
@@ -974,10 +986,14 @@ form .field {
 .form__item span {
   margin: 5px;
 }
+.form__inner {
+  display: flex;
+  flex-direction: column;
+}
 .form__row {
   text-align: center;
   border-radius: 15px;
-  padding: 0 30px;
+  padding: 20px 30px;
   background-color: #ffffff;
 }
 .form__contact {
@@ -1067,7 +1083,7 @@ form .field {
   }
 }
 .news {
-  margin: 10px 0;
+  padding: 0 20px;
 }
 .news__title {
   text-align: center;
@@ -1084,7 +1100,7 @@ form .field {
 }
 .news__item {
   border-radius: 20px;
-  margin: 15px;
+  margin: 50px 0;
   box-shadow: 0px 0px 10px 5px grey;
 }
 .news__head {
@@ -1190,9 +1206,9 @@ form .field {
   }
 }
 .footer {
-  padding: 10px 20px;
+  padding: 40px 20px 0 20px;
   background-image: url(/img/2400_c1ouon_img_866df235472197bbe4f267950c51c60e.webp);
-  background-size: cover;
+  background-size: contain;
   margin: 10px 0;
 }
 .footer__logo {
@@ -1216,6 +1232,7 @@ form .field {
   padding: 0;
   list-style: none;
   display: flex;
+  padding: 20px 0;
 }
 .footer__item span {
   margin: 5px 0;
@@ -1242,6 +1259,7 @@ form .field {
 }
 .footer__contacts {
   display: flex;
+  margin-bottom: 50px;
 }
 .footer__contact {
   width: 58.8235294118%;
@@ -1255,7 +1273,7 @@ form .field {
   width: max-content;
 }
 .footer__img {
-  width: 35px;
+  height: 35px;
   margin: 10px 0;
 }
 .footer__email {
@@ -1264,6 +1282,23 @@ form .field {
 .footer__email a {
   text-decoration: none;
   color: #ffffff;
+}
+.footer__developer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px 0 15px 0;
+  margin: 0 -20px;
+}
+.footer__inner {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+.footer__link-last {
+  color: #ffffff;
+}
+.footer__link {
+  color: #00d56d;
 }
 
 @media (min-width: 768px) {

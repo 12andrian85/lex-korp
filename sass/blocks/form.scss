@@ -1,7 +1,6 @@
 .form {
     background-color: $color-grey-light;
-    padding: 40px 10px;
-    margin: 10px;
+    padding: 40px 20px;
 
     &__title {
         text-align: center;
@@ -38,11 +37,15 @@
     &__item span {
         margin: 5px;
     }
+    &__inner{
+        display: flex;
+        flex-direction: column;
+    }
 
     &__row {
         text-align: center;
         border-radius: 15px;
-        padding: 0 30px;
+        padding: 20px 30px;
         background-color: $color-white;
     }
 
