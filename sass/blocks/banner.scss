@@ -43,12 +43,10 @@
 
 
     .splide {
-        // &__list {}
 
         &__slide {
-            height: 800px;
+            height: 500px;
             background-size: cover;
-            // min-width: 200px;
             flex-grow: 1;
         }
 
@@ -89,27 +87,35 @@
             text-align: start;
 
         }
-            &__block {
-                height: 800px;
-                padding-top: 250px;
-            }
-            &__block span{
-                font-size: 30px;
-            }
 
-            &__block p {
-                width: 40%;
+        &__block {
+            height: 800px;
+            padding-top: 250px;
+        }
+
+        &__block span {
+            font-size: 30px;
+        }
+
+        &__block p {
+            width: 40%;
+        }
+        .splide {
+
+            &__slide {
+                height: 800px;
             }
+        }
 
     }
 }
 
 
-    @media (min-width: $width-desktop ) {
-        .banner{
-            &__block{
-                padding: 250px 150px;
-            }
+@media (min-width: $width-desktop ) {
+    .banner {
+        &__block {
+            padding: 250px 150px;
         }
-
     }
+
+}
