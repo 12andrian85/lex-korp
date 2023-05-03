@@ -118,6 +118,7 @@
 
 @media (min-width: $width-desktop ) {
     .form {
+        
         &__container {
             background-color: rgb(101, 215, 101);
             border-radius: 15px;
@@ -125,7 +126,7 @@
 
         &__contact {
             flex-grow: 1;
-            border-radius: 0;
+            border-radius: 1;
         }
 
         &__row {

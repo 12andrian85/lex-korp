@@ -33,13 +33,14 @@
             position: relative;
             display: flex;
             flex-direction: column;
+            font-size: 12px;
         }
 
         &__inner::after {
             position: absolute;
             content: "";
             width: 30px;
-            height: 30px;
+            height: 35px;
             left: -40px;
             background-repeat: no-repeat;
             background-size: contain;
@@ -99,6 +100,10 @@
 @media (min-width: $width-desktop ) {
     .header {
         padding: 0 150px;
+        
+        &__logo{
+            flex-grow: 1;
+        }
 
         &__item {
             align-items: center;

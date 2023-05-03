@@ -85,8 +85,11 @@
 
 @media (min-width: $width-tablet ) {
     .about {
+        margin-top: 0;
+        margin-bottom: 80px;
         &__advantage {
             flex-direction: column;
+            text-align: center;
         }
 
         &__ticks {
@@ -102,7 +105,10 @@
 
         &__foto {
             position: relative;
+            height: 440px;
+            border-radius: 10px;
         }
+
         &__experience {
             bottom: 20px;
         }
@@ -112,9 +118,11 @@
 @media (min-width: $width-desktop ) {
     .about {
         @include container;
+        margin: 100px 0;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        
 
         &__list {
             display: block;
@@ -132,6 +140,7 @@
         }
 
         &__title {
+            text-align: start;
             width: 50%;
         }
 

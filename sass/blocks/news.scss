@@ -40,8 +40,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height: 250px;
-        padding: 10px 20px;
+        padding: 40px 20px;
         align-items: center;
         text-align: center;
         border-bottom-left-radius: 20px;
@@ -96,11 +95,16 @@
         }
 
         &__item {
+            margin: 0 30px;
             flex-grow: 1;
         }
 
         &__item:last-child {
             display: none;
+        }
+        &__body{
+            align-items: flex-start;
+            text-align: start;
         }
     }
 }

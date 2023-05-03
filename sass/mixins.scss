@@ -7,7 +7,7 @@
 @mixin outline {
     // min-height: 50px;
     outline-color: tomato;
-    outline-style: dashed;
+    // outline-style: dashed;
     outline-width: 1px;
 }
 
@@ -30,6 +30,6 @@
     }
 
     @media (min-width: $width-desktop ) {
-        padding: 0 150px;
+        padding: 100px 150px;
     }
 }

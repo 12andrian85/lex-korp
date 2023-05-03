@@ -66,7 +66,7 @@
     }
 
     &__item img{
-        width: 50px;
+        height: 50px;
         margin: 20px;
     }
 
@@ -103,6 +103,7 @@
 
 @media (min-width: $width-desktop) {
     .improving {
+        padding: 150px 0;
 
         &__head {
             padding: 50px 200px;

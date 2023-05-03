@@ -27,7 +27,6 @@ img {
 
 ul, li, div, span, article, section, nav, form {
   outline-color: tomato;
-  outline-style: dashed;
   outline-width: 1px;
 }
 
@@ -225,12 +224,13 @@ form .field {
     position: relative;
     display: flex;
     flex-direction: column;
+    font-size: 12px;
   }
   .header__inner::after {
     position: absolute;
     content: "";
     width: 30px;
-    height: 30px;
+    height: 35px;
     left: -40px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -265,6 +265,9 @@ form .field {
   .header {
     padding: 0 150px;
   }
+  .header__logo {
+    flex-grow: 1;
+  }
   .header__item {
     align-items: center;
   }
@@ -278,7 +281,7 @@ form .field {
   justify-content: space-between;
   background-color: #00d56d;
   border-radius: 15px;
-  z-index: 1;
+  z-index: 2;
 }
 .nav__list {
   margin: 0;
@@ -297,7 +300,7 @@ form .field {
   align-items: center;
   width: auto;
   padding: 10px;
-  font-size: 22px;
+  font-size: 16px;
   text-decoration: none;
   color: #ffffff;
 }
@@ -341,7 +344,7 @@ form .field {
 
 @media (min-width: 768px) {
   .nav {
-    z-index: 1;
+    z-index: 2;
     top: -10px;
   }
 }
@@ -365,10 +368,12 @@ form .field {
   }
   .nav__item a {
     text-decoration: none;
+    padding: 10px 15px;
   }
   .nav__social {
     position: absolute;
-    right: 50px;
+    right: 20px;
+    height: 60px;
   }
   .nav__btn {
     display: none;
@@ -386,6 +391,7 @@ form .field {
   padding-top: 70px;
   background-color: rgba(15, 11, 64, 0.4392156863);
   color: #ffffff;
+  z-index: 1;
 }
 .banner__block span {
   color: #00d56d;
@@ -410,7 +416,7 @@ form .field {
   background-color: #1d466f;
 }
 .banner .splide__slide {
-  height: 500px;
+  height: 800px;
   background-size: cover;
   flex-grow: 1;
 }
@@ -440,6 +446,10 @@ form .field {
   .banner__block {
     text-align: start;
   }
+  .banner__block {
+    height: 800px;
+    padding-top: 250px;
+  }
   .banner__block span {
     font-size: 30px;
   }
@@ -449,7 +459,7 @@ form .field {
 }
 @media (min-width: 1200px) {
   .banner__block {
-    padding: 100px 150px;
+    padding: 250px 150px;
   }
 }
 .features {
@@ -469,6 +479,7 @@ form .field {
   justify-content: flex-end;
   align-items: center;
   box-shadow: 0px 3px 14px 0px #1d466f;
+  z-index: 1;
 }
 .features__item h4 {
   margin: 0;
@@ -560,7 +571,7 @@ form .field {
 }
 @media (min-width: 1200px) {
   .about {
-    padding: 0 150px;
+    padding: 100px 150px;
   }
 }
 .about__title {
@@ -631,8 +642,13 @@ form .field {
 }
 
 @media (min-width: 768px) {
+  .about {
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
   .about__advantage {
     flex-direction: column;
+    text-align: center;
   }
   .about__ticks {
     width: 35px;
@@ -645,6 +661,8 @@ form .field {
   }
   .about__foto {
     position: relative;
+    height: 440px;
+    border-radius: 10px;
   }
   .about__experience {
     bottom: 20px;
@@ -652,6 +670,7 @@ form .field {
 }
 @media (min-width: 1200px) {
   .about {
+    margin: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -659,7 +678,7 @@ form .field {
 }
 @media (min-width: 1200px) and (min-width: 1200px) {
   .about {
-    padding: 0 150px;
+    padding: 100px 150px;
   }
 }
 @media (min-width: 1200px) {
@@ -683,6 +702,7 @@ form .field {
 }
 @media (min-width: 1200px) {
   .about__title {
+    text-align: start;
     width: 50%;
   }
 }
@@ -721,6 +741,7 @@ form .field {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 330px;
   padding: 30px 40px;
   margin: 50px 0;
   background-color: #ffffff;
@@ -748,7 +769,7 @@ form .field {
 
 @media (min-width: 768px) and (min-width: 1200px) {
   .service {
-    padding: 0 150px;
+    padding: 100px 150px;
   }
 }
 @media (min-width: 768px) {
@@ -766,15 +787,22 @@ form .field {
 }
 @media (min-width: 1200px) {
   .service__header {
+    padding-top: 100px;
     display: flex;
   }
   .service__title, .service__content {
     width: 50%;
     text-align: start;
   }
+  .service__list {
+    padding-bottom: 100px;
+  }
+  .service__item {
+    margin: 0;
+  }
   .service__items {
     width: 33.3333333333%;
-    padding: 0 3 0px;
+    padding: 30px;
   }
 }
 .team {
@@ -846,7 +874,7 @@ form .field {
 
 @media (min-width: 768px) and (min-width: 1200px) {
   .team {
-    padding: 0 150px;
+    padding: 100px 150px;
   }
 }
 @media (min-width: 768px) {
@@ -857,6 +885,11 @@ form .field {
 @media (min-width: 768px) {
   .team__item {
     width: 33.3333333333%;
+  }
+}
+@media (min-width: 768px) {
+  .team__card {
+    margin: 30px;
   }
 }
 .improving__container {
@@ -919,7 +952,7 @@ form .field {
   flex-grow: 1;
 }
 .improving__item img {
-  width: 50px;
+  height: 50px;
   margin: 20px;
 }
 .improving__numbers {
@@ -943,10 +976,13 @@ form .field {
 }
 @media (min-width: 768px) and (min-width: 1200px) {
   .improving__body {
-    padding: 0 150px;
+    padding: 100px 150px;
   }
 }
 @media (min-width: 1200px) {
+  .improving {
+    padding: 150px 0;
+  }
   .improving__head {
     padding: 50px 200px;
   }
@@ -1019,7 +1055,7 @@ form .field {
 
 @media (min-width: 768px) and (min-width: 1200px) {
   .form {
-    padding: 0 150px;
+    padding: 100px 150px;
   }
 }
 @media (min-width: 768px) {
@@ -1072,7 +1108,7 @@ form .field {
   }
   .form__contact {
     flex-grow: 1;
-    border-radius: 0;
+    border-radius: 1;
   }
   .form__row {
     background-color: white;
@@ -1121,8 +1157,7 @@ form .field {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 250px;
-  padding: 10px 20px;
+  padding: 40px 20px;
   align-items: center;
   text-align: center;
   border-bottom-left-radius: 20px;
@@ -1168,7 +1203,7 @@ form .field {
 
 @media (min-width: 768px) and (min-width: 1200px) {
   .news {
-    padding: 0 150px;
+    padding: 100px 150px;
   }
 }
 @media (min-width: 768px) {
@@ -1178,12 +1213,19 @@ form .field {
 }
 @media (min-width: 768px) {
   .news__item {
+    margin: 0 30px;
     flex-grow: 1;
   }
 }
 @media (min-width: 768px) {
   .news__item:last-child {
     display: none;
+  }
+}
+@media (min-width: 768px) {
+  .news__body {
+    align-items: flex-start;
+    text-align: start;
   }
 }
 @media (min-width: 1200px) {
@@ -1206,14 +1248,19 @@ form .field {
   }
 }
 .footer {
-  padding: 40px 20px 0 20px;
+  position: relative;
+  padding: 40px 20px 100px 20px;
   background-image: url(/img/2400_c1ouon_img_866df235472197bbe4f267950c51c60e.webp);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 10px 0;
 }
 .footer__logo {
   text-align: start;
   color: #ffffff;
+}
+.footer__logo p {
+  padding-right: 100px;
 }
 .footer__socials {
   display: flex;
@@ -1284,10 +1331,13 @@ form .field {
   color: #ffffff;
 }
 .footer__developer {
+  position: absolute;
+  bottom: 0;
   background-color: #000000;
   color: #ffffff;
   padding: 20px 0 15px 0;
   margin: 0 -20px;
+  width: 100%;
 }
 .footer__inner {
   display: flex;
@@ -1303,20 +1353,20 @@ form .field {
 
 @media (min-width: 768px) {
   .footer {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
   }
 }
 @media (min-width: 768px) and (min-width: 1200px) {
   .footer {
-    padding: 0 150px;
+    padding: 100px 150px;
   }
 }
 @media (min-width: 768px) {
   .footer__logo {
     width: 50%;
     flex-grow: 1;
-    padding-right: 100px;
   }
 }
 @media (min-width: 768px) {
@@ -1327,6 +1377,17 @@ form .field {
 @media (min-width: 768px) {
   .footer__contacts {
     padding: 0 150px;
+  }
+}
+@media (min-width: 768px) {
+  .footer__contact, .footer__email {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .footer__developer {
+    flex-grow: 1;
   }
 }
 @media (min-width: 1200px) {

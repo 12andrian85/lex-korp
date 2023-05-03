@@ -11,6 +11,7 @@
         padding-top: 70px;
         background-color: #0f0b4070;
         color: $color-white;
+        z-index: 1;
     }
 
     &__block span {
@@ -45,7 +46,7 @@
         // &__list {}
 
         &__slide {
-            height: 500px;
+            height: 800px;
             background-size: cover;
             // min-width: 200px;
             flex-grow: 1;
@@ -88,6 +89,10 @@
             text-align: start;
 
         }
+            &__block {
+                height: 800px;
+                padding-top: 250px;
+            }
             &__block span{
                 font-size: 30px;
             }
@@ -103,7 +108,7 @@
     @media (min-width: $width-desktop ) {
         .banner{
             &__block{
-                padding: 100px 150px;
+                padding: 250px 150px;
             }
         }
 
