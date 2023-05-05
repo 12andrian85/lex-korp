@@ -290,9 +290,17 @@ form .field {
   position: absolute;
   top: 60px;
   width: 100%;
+  left: 0;
   background-color: #00d56d;
   border-radius: 10px;
   display: none;
+}
+.nav__list--open {
+  display: block;
+  border-radius: 0;
+}
+.nav__item--first {
+  border-radius: 0;
 }
 .nav__item a {
   display: flex;
@@ -300,7 +308,8 @@ form .field {
   align-items: center;
   width: auto;
   padding: 10px;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: 600;
   text-decoration: none;
   color: #ffffff;
 }
@@ -416,7 +425,7 @@ form .field {
   background-color: #1d466f;
 }
 .banner .splide__slide {
-  height: 800px;
+  height: 500px;
   background-size: cover;
   flex-grow: 1;
 }
@@ -456,6 +465,9 @@ form .field {
   .banner__block p {
     width: 40%;
   }
+  .banner .splide__slide {
+    height: 800px;
+  }
 }
 @media (min-width: 1200px) {
   .banner__block {
@@ -478,7 +490,7 @@ form .field {
   background-color: white;
   justify-content: flex-end;
   align-items: center;
-  box-shadow: 0px 3px 14px 0px #1d466f;
+  box-shadow: 0px 3px 14px 0px #c5c5c5;
   z-index: 1;
 }
 .features__item h4 {
@@ -747,7 +759,7 @@ form .field {
   background-color: #ffffff;
   border-radius: 15px;
   border-bottom: 5px solid #00d56d;
-  box-shadow: 0px 0px 16px 3px #7a7b7a;
+  box-shadow: 0px 0px 16px 3px #c5c5c5;
 }
 .service__item:hover {
   border-bottom: 5px solid rgb(0, 168, 87);
@@ -835,7 +847,7 @@ form .field {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  box-shadow: 0px 0px 16px 3px #7a7b7a;
+  box-shadow: 0px 0px 16px 3px #c5c5c5;
 }
 .team__card--first {
   background-image: url("/img/images (1).jpg");
@@ -1102,6 +1114,11 @@ form .field {
   }
 }
 @media (min-width: 1200px) {
+  .form__title {
+    position: relative;
+    top: 120px;
+    left: 30px;
+  }
   .form__container {
     background-color: rgb(101, 215, 101);
     border-radius: 15px;
@@ -1113,9 +1130,13 @@ form .field {
   .form__row {
     background-color: white;
     flex-grow: 2;
+    padding: 80px 30px;
   }
   .form__item {
     padding: 20px;
+  }
+  .form__field {
+    padding: 30px 0;
   }
 }
 .news {
@@ -1137,7 +1158,7 @@ form .field {
 .news__item {
   border-radius: 20px;
   margin: 50px 0;
-  box-shadow: 0px 0px 10px 5px grey;
+  box-shadow: 0px 0px 10px 5px #c5c5c5;
 }
 .news__head {
   border-radius: 20px;
@@ -1392,8 +1413,8 @@ form .field {
 }
 @media (min-width: 1200px) {
   .footer {
-    padding-top: 50PX;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 100px;
   }
   .footer__contacts {
     flex-direction: column;
@@ -1416,5 +1437,9 @@ form .field {
   }
   .footer__contacts, .footer__container, .footer__logo {
     width: 33.3333333333%;
+  }
+  .footer__developer {
+    margin: 0 -150px;
+    padding: 10px 0;
   }
 }

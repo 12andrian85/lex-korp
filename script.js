@@ -1,3 +1,13 @@
+const openMenu = document.querySelector(".nav__btn");
+const menu = document.querySelector(".nav__list");
+
+
+openMenu.addEventListener("click", function (event) {
+    event.preventDefault();
+    console.log("hii");
+    menu.classList.toggle("nav__list--open")
+});
+
 
 new Splide("#slideContent", {
     type: 'loop',
@@ -5,27 +15,6 @@ new Splide("#slideContent", {
     arrows: false,
     pagination: false,
     autoplay: true,
-    interval: 2000,
+    interval: 1500,
 }).mount();
 
-// new Splide("#image-carousel", {
-//     mediaQuery: 'min',
-//     perPage: 1,
-//     breakpoints: {
-//         768: {
-//             perPage: 2,
-//             gap: '3px',
-//         },
-//         1201: {
-//             perPage: 3,
-//         },
-//         1500: {
-//             perPage: 4,
-//             gap: '3px',
-//         },
-//     },
-//     arrows: false,
-//     pagination: true,
-//     autoplay: false,
-//     interval: 2000,
-// }).mount();

@@ -157,8 +157,8 @@
 
 @media (min-width: $width-desktop) {
     .footer {
-        padding-top: 50PX;
-        padding-bottom: 50px;
+        padding-top: 70px;
+        padding-bottom: 100px;
 
         &__contacts {
             flex-direction: column;
@@ -189,6 +189,11 @@
         &__container,
         &__logo {
             width: calc(100%/3);
+        }
+
+        &__developer {
+            margin: 0 -150px;
+            padding: 10px 0;
         }
 
     }
