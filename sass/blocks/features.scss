@@ -46,7 +46,7 @@
         content: "";
         width: 15px;
         height: 15px;
-        background-image: url("/img/arrow-right-solid.svg");
+        background-image: url ("https://12andrian85.github.io/lex-korp/img/arrow-right-solid.svg");
 
         top: 5px;
         transform: translateX(-50%);
@@ -95,15 +95,15 @@
     }
 
     &__item--banknote::after {
-        background-image: url("/img/money-bill-1-regular.svg");
+        background-image: url ("https://12andrian85.github.io/lex-korp/img/money-bill-1-regular.svg");
     }
 
     &__item--files::after {
-        background-image: url("/img/file-lines-regular - 1.svg");
+        background-image: url ("https://12andrian85.github.io/lex-korp/img/file-lines-regular - 1.svg");
     }
 
     &__item--accounting::after {
-        background-image: url("/img/address-book-regular.svg");
+        background-image: url ("https://12andrian85.github.io/lex-korp/img/address-book-regular.svg");
     }
 
 }

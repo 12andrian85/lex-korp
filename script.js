@@ -15,6 +15,7 @@ new Splide("#slideContent", {
     arrows: false,
     pagination: false,
     autoplay: true,
-    interval: 1500,
-}).mount();
+    interval: 2500,
+})
+.mount();
 

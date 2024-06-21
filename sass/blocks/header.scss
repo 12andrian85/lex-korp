@@ -9,7 +9,10 @@
 
     &__list {
         display: none;
+
     }
+
+
 }
 
 @media (min-width: $width-tablet ) {
@@ -45,14 +48,17 @@
             background-repeat: no-repeat;
             background-size: contain;
         }
+
         &__inner--email::after {
             background-image: url("/img/envelope.svg");
+            // background-image: url("/img/envelope.svg");
         }
-        
+
         &__inner--address::after {
             background-image: url("/img/location.svg");
         }
-        &__inner--call::after{
+
+        &__inner--call::after {
             background-image: url("/img/mobile-screen.svg");
         }
 
@@ -84,15 +90,15 @@
         //     height: 30px;
         //     left: 20px;
 
-        //     background-image: url("/img/mobile-screen.svg");
+        //     background-image: url ("https://12andrian85.github.io/lex-korp/img/mobile-screen.svg");
         //     background-repeat: no-repeat;
         //     background-size: contain;
         // }
         // &__item--email::after{
-        //     background-image: url("/img/envelope.svg");
+        //     background-image: url ("https://12andrian85.github.io/lex-korp/img/envelope.svg");
         // }
         // &__item--address::after{
-        //     background-image: url("/img/location.svg");
+        //     background-image: url ("https://12andrian85.github.io/lex-korp/img/location.svg");
         // }
     }
 }
@@ -100,8 +106,8 @@
 @media (min-width: $width-desktop ) {
     .header {
         padding: 0 150px;
-        
-        &__logo{
+
+        &__logo {
             flex-grow: 1;
         }
 

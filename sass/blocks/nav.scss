@@ -6,9 +6,10 @@
     bottom: -20px;
     justify-content: space-between;
     background-color: $color-primary;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     z-index: 2;
-    
+
     &__list {
         @include no-list-style;
         position: absolute;
@@ -19,11 +20,13 @@
         border-radius: 10px;
         display: none;
     }
-    &__list--open{
+
+    &__list--open {
         display: block;
         border-radius: 0;
     }
-    &__item--first{
+
+    &__item--first {
         border-radius: 0;
     }
 
@@ -31,14 +34,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: auto ;
+        width: auto;
         padding: 10px;
         font-size: 17px;
         font-weight: 600;
         text-decoration: none;
         color: $color-white;
     }
-    &__item a:hover{
+
+    &__item a:hover {
         color: $color-secondary
     }
 
@@ -46,39 +50,45 @@
         @include no-list-style;
         display: flex;
         justify-content: flex-start;
+        align-items: center;
     }
 
     &__items {
         display: flex;
-        align-items: center;
-        padding: 0 10px;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 16px;
         margin: 0 5px;
+        width: 20px;
+        height: 20px;
     }
-    &__items--f{
-        background-image: url("/img/facebook.svg");
+
+    &__items--f {
+        background-image: url ("https://12andrian85.github.io/lex-korp/img/facebook.svg");
     }
-    &__items--in{
-        background-image: url("/img/linkedin-in.svg");
+
+    &__items--in {
+        background-image: url ("https://12andrian85.github.io/lex-korp/img/linkedin-in.svg");
     }
-    &__items--ins{
-        background-image: url("/img/square-instagram.svg");
+
+    &__items--ins {
+        background-image: url ("https://12andrian85.github.io/lex-korp/img/square-instagram.svg");
     }
-    &__btn{
+
+    &__btn {
         padding: 0 12px;
         margin: 0 5px;
         border: none;
         background-color: transparent;
-        background-image: url("/img/bars-solid.svg");
+        background-image: url ("https://12andrian85.github.io/lex-korp/img/bars-solid.svg");
         background-repeat: no-repeat;
         background-position: center;
     }
+   
 
 }
+
 @media (min-width: $width-tablet ) {
-    .nav{
+    .nav {
         z-index: 2;
         top: -10px;
     }
@@ -113,7 +123,8 @@
             right: 20px;
             height: 60px;
         }
-        &__btn{
+
+        &__btn {
             display: none;
         }
     }

@@ -280,7 +280,8 @@ form .field {
   bottom: -20px;
   justify-content: space-between;
   background-color: #00d56d;
-  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   z-index: 2;
 }
 .nav__list {
@@ -322,31 +323,31 @@ form .field {
   list-style: none;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 .nav__items {
   display: flex;
-  align-items: center;
-  padding: 0 10px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 16px;
   margin: 0 5px;
+  width: 20px;
+  height: 20px;
 }
 .nav__items--f {
-  background-image: url("/img/facebook.svg");
+  background-image: url "https://12andrian85.github.io/lex-korp/img/facebook.svg";
 }
 .nav__items--in {
-  background-image: url("/img/linkedin-in.svg");
+  background-image: url "https://12andrian85.github.io/lex-korp/img/linkedin-in.svg";
 }
 .nav__items--ins {
-  background-image: url("/img/square-instagram.svg");
+  background-image: url "https://12andrian85.github.io/lex-korp/img/square-instagram.svg";
 }
 .nav__btn {
   padding: 0 12px;
   margin: 0 5px;
   border: none;
   background-color: transparent;
-  background-image: url("/img/bars-solid.svg");
+  background-image: url "https://12andrian85.github.io/lex-korp/img/bars-solid.svg";
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -515,7 +516,7 @@ form .field {
   content: "";
   width: 15px;
   height: 15px;
-  background-image: url("/img/arrow-right-solid.svg");
+  background-image: url "https://12andrian85.github.io/lex-korp/img/arrow-right-solid.svg";
   top: 5px;
   transform: translateX(-50%);
   right: -30px;
@@ -551,13 +552,13 @@ form .field {
   background-color: #22ba67;
 }
 .features__item--banknote::after {
-  background-image: url("/img/money-bill-1-regular.svg");
+  background-image: url "https://12andrian85.github.io/lex-korp/img/money-bill-1-regular.svg";
 }
 .features__item--files::after {
-  background-image: url("/img/file-lines-regular - 1.svg");
+  background-image: url "https://12andrian85.github.io/lex-korp/img/file-lines-regular - 1.svg";
 }
 .features__item--accounting::after {
-  background-image: url("/img/address-book-regular.svg");
+  background-image: url "https://12andrian85.github.io/lex-korp/img/address-book-regular.svg";
 }
 
 @media (min-width: 768px) {
@@ -602,7 +603,7 @@ form .field {
   position: relative;
   margin: 10px;
   height: 300px;
-  background-image: url("/img/two-about.webp");
+  background-image: url "https://12andrian85.github.io/lex-korp/img/two-about.webp";
   background-size: cover;
   color: wheat;
 }
@@ -616,7 +617,7 @@ form .field {
   bottom: -20px;
   left: 20px;
   background-color: #00d56d;
-  background-image: url("/img/trophy-solid.svg");
+  background-image: url "https://12andrian85.github.io/lex-korp/img/trophy-solid.svg";
   background-position: -50px;
   background-repeat: no-repeat;
 }
@@ -647,7 +648,7 @@ form .field {
   border-radius: 17px;
   margin: 10px;
   background-color: rgb(243, 243, 243);
-  background-image: url("/img/check-double-solid.svg");
+  background-image: url "https://12andrian85.github.io/lex-korp/img/check-double-solid.svg";
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
@@ -850,13 +851,13 @@ form .field {
   box-shadow: 0px 0px 16px 3px #c5c5c5;
 }
 .team__card--first {
-  background-image: url("/img/images (1).jpg");
+  background-image: url "https://12andrian85.github.io/lex-korp/img/images (1).jpg";
 }
 .team__card--second {
-  background-image: url("/img/images (2).jpg");
+  background-image: url "https://12andrian85.github.io/lex-korp/img/images (2).jpg";
 }
 .team__card--last {
-  background-image: url("/img/images.jpg");
+  background-image: url "https://12andrian85.github.io/lex-korp/img/images.jpg";
 }
 .team__name {
   color: #00d56d;
@@ -908,7 +909,7 @@ form .field {
   position: relative;
   height: 420px;
   padding: 40px 0;
-  background-image: url("/img/businesswoman-writing-working-business-financial-data-laptop-computer-table-office-min.jpg");
+  background-image: url "https://12andrian85.github.io/lex-korp/img/businesswoman-writing-working-business-financial-data-laptop-computer-table-office-min.jpg";
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1172,7 +1173,7 @@ form .field {
   display: block;
 }
 .news__head img:hover {
-  transform: scale(1.3);
+  transform: scale(0.3s);
 }
 .news__body {
   display: flex;
@@ -1306,14 +1307,22 @@ form .field {
   margin: 5px 0;
 }
 .footer__item a {
+  text-transform: capitalize;
+  position: relative;
   color: white;
   text-decoration: none;
   margin: 5px 0;
   cursor: pointer;
-}
-.footer__item a:hover {
-  border-bottom: 1px solid #00d56d;
   width: max-content;
+}
+.footer__item a:hover::after {
+  position: absolute;
+  content: "";
+  bottom: -1px;
+  left: 0;
+  border-bottom: 1px solid #00d56d;
+  width: 100%;
+  height: 1px;
 }
 .footer__item h3 {
   color: #00d56d;
@@ -1342,7 +1351,7 @@ form .field {
 }
 .footer__img {
   height: 35px;
-  margin: 10px 0;
+  margin-right: 15px;
 }
 .footer__email {
   color: #ffffff;
