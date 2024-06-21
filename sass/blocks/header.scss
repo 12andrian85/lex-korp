@@ -50,16 +50,15 @@
         }
 
         &__inner--email::after {
-            background-image: url("/img/envelope.svg");
-            // background-image: url("/img/envelope.svg");
+            background-image: url("https://12andrian85.github.io/lex-corp/img/envelope.svg");
         }
 
         &__inner--address::after {
-            background-image: url("/img/location.svg");
+            background-image: url("https://12andrian85.github.io/lex-corp/img/location.svg");
         }
 
         &__inner--call::after {
-            background-image: url("/img/mobile-screen.svg");
+            background-image: url("https://12andrian85.github.io/lex-corp/img/mobile-screen.svg");
         }
 
         &__item--hover {
@@ -90,15 +89,15 @@
         //     height: 30px;
         //     left: 20px;
 
-        //     background-image: url ("https://12andrian85.github.io/lex-korp/img/mobile-screen.svg");
+        //     background-image: url("https://12andrian85.github.io/lex-korp/img/mobile-screen.svg");
         //     background-repeat: no-repeat;
         //     background-size: contain;
         // }
         // &__item--email::after{
-        //     background-image: url ("https://12andrian85.github.io/lex-korp/img/envelope.svg");
+        //     background-image: url("https://12andrian85.github.io/lex-korp/img/envelope.svg");
         // }
         // &__item--address::after{
-        //     background-image: url ("https://12andrian85.github.io/lex-korp/img/location.svg");
+        //     background-image: url("https://12andrian85.github.io/lex-korp/img/location.svg");
         // }
     }
 }
