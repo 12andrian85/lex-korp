@@ -6,9 +6,10 @@
         text-align: center;
         display: flex;
         flex-direction: column;
+        justify-content: center;
 
         height: 500px;
-        padding-top: 70px;
+        padding: 0 20px;
         background-color: #0f0b4070;
         color: $color-white;
         z-index: 1;
@@ -82,14 +83,10 @@
 
 @media (min-width: $width-tablet ) {
     .banner {
+
         &__block {
             text-align: start;
-
-        }
-
-        &__block {
             height: 800px;
-            padding-top: 250px;
         }
 
         &__block span {
@@ -97,8 +94,9 @@
         }
 
         &__block p {
-            width: 40%;
+            width: 60%;
         }
+
         .splide {
 
             &__slide {
@@ -113,8 +111,24 @@
 @media (min-width: $width-desktop ) {
     .banner {
         &__block {
-            padding: 250px 150px;
+            padding: 0 150px;
         }
+
+        &__block span {
+            font-size: 42px;
+        }
+
+        &__block h3 {
+            font-size: 45px;
+        }
+
+        &__block p {
+            font-size: 25px;
+        }
+
+
+
+
     }
 
 }

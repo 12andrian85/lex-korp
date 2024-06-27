@@ -397,8 +397,9 @@ form .field {
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 500px;
-  padding-top: 70px;
+  padding: 0 20px;
   background-color: rgba(15, 11, 64, 0.4392156863);
   color: #ffffff;
   z-index: 1;
@@ -434,37 +435,34 @@ form .field {
   display: flex;
 }
 .banner .splide__slide--analise {
-  background-image: url("/img/business-data-dashboard-analysis-by-ingenious-computer-software-min.jpg");
+  background-image: url("https://12andrian85.github.io/lex-korp/img/business-data-dashboard-analysis-by-ingenious-computer-software-min.jpg");
 }
 .banner .splide__slide--inspector {
-  background-image: url("/img/business-man-financial-inspector-secretary-making-report-calculating-checking-balance-internal-reven.jpg");
+  background-image: url("https://12andrian85.github.io/lex-korp/img/business-man-financial-inspector-secretary-making-report-calculating-checking-balance-internal-reven.jpg");
 }
 .banner .splide__slide--buissnes {
-  background-image: url("/img/businesspeople-meeting-plan-analysis-graph-company-finance-strat-min.jpg");
+  background-image: url("https://12andrian85.github.io/lex-korp/img/businesspeople-meeting-plan-analysis-graph-company-finance-strat-min.jpg");
 }
 .banner .splide__slide--anding {
-  background-image: url("/img/two-smiling-businessmen-shaking-hands-while-standing-office-min.jpg");
+  background-image: url("https://12andrian85.github.io/lex-korp/img/two-smiling-businessmen-shaking-hands-while-standing-office-min.jpg");
 }
 .banner .splide__slide--calculating {
-  background-image: url("/img/side-view-business-man-calculating-finance-numbers-min.jpg");
+  background-image: url("https://12andrian85.github.io/lex-korp/img/side-view-business-man-calculating-finance-numbers-min.jpg");
 }
 .banner .splide__slide--low-angle {
-  background-image: url("/img/low-angle-view-skyscrapers-min.jpg");
+  background-image: url("https://12andrian85.github.io/lex-korp/img/low-angle-view-skyscrapers-min.jpg");
 }
 
 @media (min-width: 768px) {
   .banner__block {
     text-align: start;
-  }
-  .banner__block {
     height: 800px;
-    padding-top: 250px;
   }
   .banner__block span {
     font-size: 30px;
   }
   .banner__block p {
-    width: 40%;
+    width: 60%;
   }
   .banner .splide__slide {
     height: 800px;
@@ -472,7 +470,16 @@ form .field {
 }
 @media (min-width: 1200px) {
   .banner__block {
-    padding: 250px 150px;
+    padding: 0 150px;
+  }
+  .banner__block span {
+    font-size: 42px;
+  }
+  .banner__block h3 {
+    font-size: 45px;
+  }
+  .banner__block p {
+    font-size: 25px;
   }
 }
 .features {
@@ -961,6 +968,7 @@ form .field {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   width: 50%;
   flex-grow: 1;
 }
@@ -1273,7 +1281,7 @@ form .field {
 .footer {
   position: relative;
   padding: 40px 20px 100px 20px;
-  background-image: url("/img/2400_c1ouon_img_866df235472197bbe4f267950c51c60e.webp");
+  background-image: url("https://12andrian85.github.io/lex-korp/img/2400_c1ouon_img_866df235472197bbe4f267950c51c60e.webp");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 10px 0;
